@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request for new song</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <span id="logo"
+        ><i class="fa-solid fa-crown" style="color: #ffffff"></i>Music</span
+      >
+      <form>
+        <input id="search" placeholder="Search..." />
+      </form>
+      <div class="links1">
+        <button class="nav-link">
+          <i class="fa-solid fa-house"></i>&nbsp;&nbsp;
+          <a href="./index.html">Home</a>
+        </button>
+        <button class="nav-link">
+          <i class="fa-brands fa-tiktok"></i>&nbsp;&nbsp;Playlist
+        </button>
+        <button class="nav-link">
+          <i class="fa-solid fa-clock-rotate-left"></i>&nbsp;&nbsp;History
+        </button>
+        <button class="nav-link">
+          <i class="fa-brands fa-tiktok"></i>&nbsp;&nbsp;
+          <a href="./new.html">Request</a>
+        </button>
+      </div>
+
+      <div class="links2">
+        <button class="nav-link">
+          <i class="fa-solid fa-user-plus" style="color: #db9e9e"></i
+          >&nbsp;&nbsp;User+
+        </button>
+        <button class="nav-link">
+          <i class="fa-solid fa-user" style="color: #da9494"></i>&nbsp;&nbsp;Log
+          In
+        </button>
+      </div>
+
+      <footer>
+        <h4>Join for our newsletter</h4>
+        <form
+          id="newsletterForm"
+          action="https://httpbin.org/post"
+          method="POST"
+        >
+          <input
+            class="inptfld"
+            name="email"
+            placeholder=" janedoe@gmail"
+            type="text"
+          />
+          <button type="submit">Join</button>
+        </form>
+      </footer>
+    </div>
+    <div class="main">
+      <header>
+        <!-- Change this to your App's info -->
+        <!-- <h1><span>CISUM</span><button class="top-setting1"><i class="fa-regular fa-bell style=" style="color: #da9494;"></i></button>
+            <button class="top-setting2"><i class="fa-regular fa-user style=" style="color: #da9494;"></i></button>
+          </h1> -->
+        <h1>
+          <span>CISUM</span>
+          <div class="right-top-setting">
+            <button class="top-setting1">
+              <i class="fa-regular fa-bell style=" style="color: #da9494"></i>
+            </button>
+            <button class="top-setting2">
+              <i class="fa-regular fa-user style=" style="color: #da9494"></i>
+            </button>
+          </div>
+        </h1>
+        <p>Amazing songs from famous female singers you may not know</p>
+        <hr />
+
+        <form
+          id="requestingForm"
+          action="https://httpbin.org/post"
+          method="POST"
+        >
+          <h2>Request new song</h2>
+          <label for="artist-name">Artist Name: </label>
+          <input
+            type="text"
+            id="artist-name"
+            name="artist-name"
+            required
+          /><br />
+
+          <label for="music_genre">Music Genre:</label>
+          <input list="genres" id="music_genre" name="music_genre" required />
+          <datalist id="genres">
+            <option value="Pop"></option>
+            <option value="Rock"></option>
+            <option value="Hip Hop"></option>
+            <option calue="Jazz"></option></datalist
+          ><br />
+
+          <label for="artist-url">Artist URLs:</label>
+          <input type="url" id="artist-url" name="artist-url" /><br /><br />
+
+          <label for="example_songs">Example Song/Video URLs:</label>
+          <div id="example_songs_container">
+            <input type="url" name="example_songs[]" required />
+            <button type="button" onclick="addSongInput()">Add</button>
+          </div>
+          <br /><br />
+
+          <label for="explicit_lyrics">Explicit Lyrics:</label>
+          <input
+            type="checkbox"
+            id="explicit_lyrics"
+            name="explicit_lyrics"
+          /><br /><br />
+
+          <label for="description">Description:</label><br />
+          <textarea
+            id="description"
+            name="description"
+            rows="5"
+            required
+          ></textarea
+          ><br /><br />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </header>
+    </div>
+  </body>
+</html>
