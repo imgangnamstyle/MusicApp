@@ -1,0 +1,177 @@
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+  background-color: #da949430;
+  display: flex;
+}
+
+.main {
+  margin: 1px;
+  padding: 10px;
+  width: 100%;
+  color: #5f5d5d;
+}
+
+h1,
+p,
+#menu,
+#selected-artist {
+  margin: 1px;
+  padding: 10px;
+}
+
+h1 {
+  display: flex;
+}
+
+span {
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 75%;
+}
+
+.right-top-setting {
+  display: flex;
+  width: 5%;
+  padding: 8px 8px;
+  color: #ffffff;
+}
+
+.artistButton {
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #da8e8e30;
+  width: 15%;
+  height: 98vh;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#logo {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#selected-artist {
+  text-align: left;
+}
+
+#search {
+  margin: 1px;
+  padding: 10px;
+  text-align: center;
+  width: 90%;
+  background-color: #da949430;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.links1 {
+  display: flex;
+}
+
+.links1,
+.links2 {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.links2::before {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 5px;
+  background-color: #ffffff;
+}
+
+.nav-link {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  font-size: 15px;
+  background-color: #db9e9e30;
+  border-radius: 10px;
+  border: none;
+  color: grey;
+  text-align: left;
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+
+#cards {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex-basis: calc(21vw);
+  color: #5f5d5d;
+  font-size: 10px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card,
+.card p {
+  text-align: center;
+}
+
+.card:hover {
+  border: 1px solid #ffffff;
+}
+
+footer {
+  margin: 1px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  width: 90%;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
