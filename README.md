@@ -1,4 +1,4 @@
-# MusicApp
+# MusicApp [In Developing Process]
 This Music application website was created for an assignment submission for the WEB222 class. 
 The outcome of this assignment was to learn the Document Object Model(DOM), how to update CSS using DOM, and the CSS BOX model.
 JavaScript, HTML, and CSS were used in this assignment.
